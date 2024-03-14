@@ -17,10 +17,10 @@ The api used for the data can be found [here](https://corona.lmao.ninja/docs/). 
 
 <br></br>
 <div align="center">
-<img src="https://github.com/Picbridge/Tourer/blob/master/references/ref1.png" width = "200" height = "200"/>
-<img src="https://github.com/Picbridge/Tourer/blob/master/references/ref2.png" width = "200" height = "200"/>
-<img src="https://github.com/Picbridge/Tourer/blob/master/references/ref3.png" width = "200" height = "200"/>
-<img src="https://github.com/Picbridge/Tourer/blob/master/references/ref4.png" width = "200" height = "200"/>
+<img src="https://github.com/Picbridge/Tourer/blob/main/references/ref1.png" width = "200" height = "200"/>
+<img src="https://github.com/Picbridge/Tourer/blob/main/references/ref2.png" width = "200" height = "200"/>
+<img src="https://github.com/Picbridge/Tourer/blob/main/references/ref3.png" width = "200" height = "200"/>
+<img src="https://github.com/Picbridge/Tourer/blob/main/references/ref4.png" width = "200" height = "200"/>
 </div>
 <br></br>
 
