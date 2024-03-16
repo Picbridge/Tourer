@@ -1,10 +1,6 @@
 # Tourer - Tourist's scheduling app
 
-![build-release](https://github.com/arafaysaleem/covid_tracker/workflows/build-release/badge.svg) ![Test PR](https://github.com/arafaysaleem/covid_tracker/workflows/Test%20PR/badge.svg) [![GitHub release](https://img.shields.io/github/release/arafaysaleem/covid_tracker?color=blue)](https://github.com/arafaysaleem/covid_tracker/releases) [![GitHub stars](https://img.shields.io/github/stars/arafaysaleem/covid_tracker?color=orange)](https://github.com/arafaysaleem/covid_tracker/stargazers) [![GitHub issues](https://img.shields.io/github/issues/arafaysaleem/covid_tracker?color=red)](https://github.com/arafaysaleem/covid_tracker/issues) [![GitHub issues](https://img.shields.io/github/issues-closed/arafaysaleem/covid_tracker?color=brightgreen)](https://github.com/arafaysaleem/covid_tracker/issues?q=is%3Aissue+is%3Aclosed) [![GitHub forks](https://img.shields.io/github/forks/arafaysaleem/covid_tracker?color=yellow)](https://github.com/arafaysaleem/covid_tracker/network) [![License: MIT](https://img.shields.io/github/license/arafaysaleem/covid_tracker)](https://github.com/arafaysaleem/covid_tracker/blob/master/LICENSE) [![made-with-python](https://img.shields.io/badge/Made%20With-Flutter-blue)](https://flutter.dev/)
-
 The Tourer application is designed to revolutionize the travel and tourism experience by leveraging advanced AI and mapping technologies. By integrating OpenAI's ChatGPT for intelligent recommendations and the Google Maps API for precise navigation and route optimization, Tourer aims to provide users with a personalized and efficient travel planning solution.
-
-The api used for the data can be found [here](https://corona.lmao.ninja/docs/). **The release apk is available under the release tags. It's also available on this drive link - [Covid Tracker APK](https://drive.google.com/drive/folders/1xazOX_VaaAPzuccusj-hk0zsPZaomDLc?usp=sharing)**
 
 ## :iphone: Features
 
