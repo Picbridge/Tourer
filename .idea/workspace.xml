@@ -9,7 +9,21 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4984c949-7349-4887-ba35-e7a1431dba35" name="Changes" comment="" />
+    <list default="true" id="4984c949-7349-4887-ba35-e7a1431dba35" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Tourer_Android/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tourer_Android/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/android/app/src/main/java/com/tourer_android/MainApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Tourer_Android/android/app/src/main/java/com/tourer_android/MainApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Tourer_Android/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tourer_Android/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tourer_Android/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/src/Main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tourer_Android/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Tourer_Android/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +32,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\aky20\.android\avd\Pixel_8_Pro_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\aky20\.android\avd\pixel_5_-_api_34.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -42,9 +56,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2dgrMSL0xt3V6L6GCmxYJIX0DCS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,7 +72,8 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "device.mirroring"
+    "last_opened_file_path": "C:/Users/aky20/AndroidStudioProjects/Tourer/Tourer_Android",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
   <component name="RunManager">
