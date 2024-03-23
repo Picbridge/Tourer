@@ -1,10 +1,9 @@
-import React from 'react';
-import { View, TextInput, Button, StyleSheet, Image } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
-import Geolocation from 'react-native-geolocation-service';
+import React , { useState }from 'react';
+import { View, Button, StyleSheet, Image } from 'react-native';
+import MapSearch from '../components/MapSearch';
 
 const HomeScreen = ({ route, navigation }) => {
-  const {location} = route.params;
+  const location = route.params.location;
 
   return (
     <View style={{ flex: 1, marginTop: 20 }}>
@@ -14,16 +13,7 @@ const HomeScreen = ({ route, navigation }) => {
       />
 
       <View style={{ flexDirection: 'row', alignItems: 'stretch' }}>
-        <TextInput
-          style={{ ...styles.searchBar, flex: 1 }}
-          placeholder="Search destination"
-        // Add any necessary onChangeText or onSubmitEditing handlers
-        />
-        {location && (
-          <MapView style={styles.mapStyle} region={location} >
-            <Marker coordinate={location} />
-          </MapView>
-        )}
+        <MapSearch initialLocation = { location } />
       </View>
 
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -32,8 +22,6 @@ const HomeScreen = ({ route, navigation }) => {
           onPress={() => navigation.navigate('Profile')}
         />
       </View>
-
-
 
     </View>
   );
@@ -51,22 +39,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
-  mapStyle: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    width: '100%',
-    height: '400%',
-    marginTop: 80
-  },
-  searchBar: {
-    height: 40,
-    width: '80%',
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
+  
 });
 

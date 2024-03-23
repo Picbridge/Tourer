@@ -14,7 +14,7 @@ const SplashScreen = () => {
         if (hasPermission) {
             Geolocation.getCurrentPosition(
                 position => {
-                    console.log('Current Position:', position);
+                    //console.log('Current Position:', position);
                     setLocation({
                         latitude: position.coords.latitude,
                         longitude: position.coords.longitude,
@@ -41,16 +41,17 @@ const SplashScreen = () => {
 
     React.useEffect(() => {
         Animated.timing(fadeAnim, {
-          toValue: 1,
-          duration: 1000,
-          useNativeDriver: true,
+            toValue: 1,
+            duration: 1000,
+            useNativeDriver: true,
         }).start();
-      }, [fadeAnim]);
+    }, [fadeAnim]);
 
     React.useEffect(() => {
         getLocation();
     }, []);
-    
+
+    // Pass location to HomeScreen after 2 seconds
     React.useEffect(() => {
         if (location !== null) {
             setTimeout(() => {
@@ -60,7 +61,7 @@ const SplashScreen = () => {
                     useNativeDriver: true,
                 }).start(() => navigation.navigate('Home', { location })); // Navigate after fade-out
             }, 2000);
-          }
+        }
     }, [location, navigation]); // add navigation to dependency array
 
     return (
