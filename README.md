@@ -20,17 +20,17 @@ The Tourer application is designed to revolutionize the travel and tourism exper
 ## Technologies
 
 ### AI and Mapping technologies
-* Google's Gemini-pro: For inteligent, personalized recommendations based on user preferences and regional data.
-* Google Maps API: For precise navigation, route optimization, and cost estimations.
+* **Google's Gemini-pro**: For inteligent, personalized recommendations based on user preferences and regional data.
+* **Google Maps API**: For precise navigation, route optimization, and cost estimations.
 
 ### Third-party APIs
 * Weather API for integrating weather forecasts into travel planning.
 
 ## Core Features 
-* Personalized Recommendations - Provide users with places to visit, eat, and explore based on their preferences.
-* Route Optimization - Utilize Google Maps API to offer travel routes for most efficient journey.
-* Time Scheduling - Automatically generate a time-efficient schedule for visiting recommended places, ensuring users can make the most out of thier trips.
-* Cost calculation - Estimate the overall cost of the planned trip, including travel expenses, entry fees for the attractions, and estimated food costs, providing users with a bugetary overview.
+* **Personalized Recommendations** - Provide users with places to visit, eat, and explore based on their preferences.
+* **Route Optimization** - Utilize Google Maps API to offer travel routes for most efficient journey.
+* **Time Scheduling** - Automatically generate a time-efficient schedule for visiting recommended places, ensuring users can make the most out of thier trips.
+* **Cost Calculation** - Estimate the overall cost of the planned trip, including travel expenses, entry fees for the attractions, and estimated food costs, providing users with a bugetary overview.
   
 ## Future Features
 
