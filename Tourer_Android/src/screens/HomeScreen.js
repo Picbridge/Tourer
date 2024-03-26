@@ -26,7 +26,7 @@ const HomeScreen = ({ route, navigation }) => {
       
       {searchedLocation.description != '' && 
       <GetResponseFromPrompt place={searchedLocation.description} onRespond={handleRespond} />}
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <View style={{ flex: 1, }}>
         <ScrollView style={{ flex: 1 }}>
           {response && <Text>{response}</Text>}
         </ScrollView>

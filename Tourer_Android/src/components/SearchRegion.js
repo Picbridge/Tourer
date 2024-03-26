@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import MapView, { Marker } from 'react-native-maps';
 import Config from 'react-native-config';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
@@ -7,11 +7,14 @@ import axios from 'axios';
 
 const SearchRegion = ({ initialLocation, onLocationChange }) => {
     const [location, setLocation] = useState(null);
-    const [searchedLocation, setSearchedLocation] = useState(null);
+    const inputRef = useRef();
+    //const [searchedLocation, setSearchedLocation] = useState(null);
 
     const handleKeyPress = async () => {
+        const searchedLocation = inputRef.current?.getAddressText();
         const topResult = await fetchTopResult(searchedLocation);
         //console.log('Enter key pressed:', topResult.description);
+        {topResult && setDetails(topResult.place_id);}
         onLocationChange({description: topResult.description, place_id:topResult.place_id});
     };
 
@@ -56,18 +59,19 @@ const SearchRegion = ({ initialLocation, onLocationChange }) => {
 
             <GooglePlacesAutocomplete
                 fetchDetails={true}
+                ref = {inputRef}
                 textInputProps={{
                     InputComp: TextInput,
                     placeholder: 'Search destination',
                     style: styles.searchBar,
-                    onChangeText: async (localSearchedLocation) => {
-                        if (localSearchedLocation.trim() !== '') {
-                            if (localSearchedLocation === searchedLocation) return;
-                            const topResult = await fetchTopResult(localSearchedLocation);
-                            {topResult && setDetails(topResult.place_id);}
-                            setSearchedLocation(localSearchedLocation);
-                        }
-                    },
+                    // onChangeText: async (localSearchedLocation) => {
+                    //     if (localSearchedLocation.trim() !== '') {
+                    //         if (localSearchedLocation === searchedLocation) return;
+                    //         const topResult = await fetchTopResult(localSearchedLocation);
+                    //         {topResult && setDetails(topResult.place_id);}
+                    //         setSearchedLocation(localSearchedLocation);
+                    //     }
+                    // },
                     onSubmitEditing: handleKeyPress,
                     returnKeyType: 'search',
                 }}

@@ -17,10 +17,15 @@ const GetResponseFromPrompt = ({ place, onRespond }) => {
             // Start loading
             setLoading(true);
             const result = await model.generateContent(prompt);
-            const response = await result.response;
+            //retry until the response contains the **Attractions** keyword
+            let response = await result.response;
+            while (!response.text().includes('Attractions')) {
+                response = await model.generateContent(prompt).response;
+            }
             // Stop loading and set response
             setLoading(false);
             onRespond(response.text());
+            
         }
         catch (error) {
             setLoading(false);
@@ -29,7 +34,18 @@ const GetResponseFromPrompt = ({ place, onRespond }) => {
     }
 
     useEffect(() => {
-        setPrompt(`Places to visit in ${place}?`);
+        setPrompt(`List the best places to visit in ${place}. 
+        separate the list to places for attractions, food(divide this to **Restaurants** and **Desserts**), sightseeing, and shopping.
+        Use ENGLISH only.
+        List at least 15 places for each category.
+        Places can be within the city or nearby towns within 40 miles. 
+        Do not describe each places. Just list them by name and address.
+        Do not use ** except for the categories listed above.
+        Here is the template for each category:
+        **Attractions**
+        * Place 1 [address]
+        * Place 2 [address]
+        * And so on...`);
     }, [place]);
 
     useEffect(() => {
@@ -39,7 +55,7 @@ const GetResponseFromPrompt = ({ place, onRespond }) => {
     return (
         <>
             <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-                <Text>{prompt}</Text>
+                <Text>{`Places to visit in ${place}?`}</Text>
             </View>
             {loading && (
                 <View style={styles.transparentBackground}>
