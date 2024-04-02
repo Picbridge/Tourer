@@ -40,5 +40,9 @@ The Tourer application is designed to revolutionize the travel and tourism exper
 
 
 ## To Do
-
+- Implement the parsing system for the generated response to organize the place to visit.
+- Generate the most efficient route through map search and cost calculations.
+- Add estimated time and cost information for the route.
+- Add estimated time spent in transit.
+- Integrate weather information into consideration.
 
